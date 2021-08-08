@@ -10,9 +10,7 @@ describe('Test all login functionalities', () => {
   })
 
   it("Login with valid email and password for a normal user", ()=>{
-    LoginPage.emailField().type("user")
-    LoginPage.passwordField().type("user")
-    LoginPage.loginBtn().click()
+    LoginPage.performLogin({ email: "user", password: "user" })
     Header.coursesLink().should("be.visible")
     Header.coursesLink().click()
     cy.url().should("contain", "/courses")
@@ -20,9 +18,7 @@ describe('Test all login functionalities', () => {
   })
 
   it('should login correctly using admin', function() {
-    LoginPage.emailField().type("admin")
-    LoginPage.passwordField().type("admin")
-    LoginPage.loginBtn().click()
+    LoginPage.performLogin({ email: "admin", password: "admin" })
     Header.coursesLink().should("be.visible")
     Header.coursesLink().click()
     cy.url().should("contain", "/courses")
