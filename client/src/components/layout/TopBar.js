@@ -18,7 +18,7 @@ const TopBar = ({ logout }, context) => (
                 <Link className="pseudo button" to="/">
                     Home
                 </Link>
-                <Link className="pseudo button" to="/courses">
+                <Link className="pseudo button" to="/courses" data-cy="header-courses-link">
                     Courses
                 </Link>
                 {!context.auth.loggedIn && (

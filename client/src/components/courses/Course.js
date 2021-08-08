@@ -10,6 +10,7 @@ const Course = ({ course, onDelete, userCanEditCourses }) => (
                     <button
                         className="delete button"
                         onClick={() => onDelete(course)}
+                        data-cy="delete-button"
                     >
                         Delete
                     </button>

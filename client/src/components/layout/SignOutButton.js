@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 const SignOutButton = ({ logout }, context) =>
     context.auth.loggedIn ? (
         <button
+            data-cy="signout-button"
             className="button"
             onClick={() => {
                 logout().then(() => context.router.transitionTo('/'));
