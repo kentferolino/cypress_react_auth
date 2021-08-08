@@ -1,4 +1,4 @@
-import React, { Component, useCallback } from 'react';
+import React, { Component} from 'react';
 
 class AddCourseForm extends Component {
     constructor(props) {
@@ -35,6 +35,7 @@ class AddCourseForm extends Component {
                     Name:
                     <br />
                     <input
+                        data-cy="new-course-input"
                         className="add-course-input"
                         onChange={this.onInputChange}
                         placeholder="Enter name"
@@ -43,6 +44,7 @@ class AddCourseForm extends Component {
                         type="text"
                     />
                     <input
+                        data-cy="new-course-button"
                         className="add-course"
                         type="submit"
                         value="Add Course"

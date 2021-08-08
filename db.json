@@ -15,8 +15,24 @@
   ],
   "courses": [
     {
-      "name": "hi",
+      "name": "Learn Selenium",
       "id": 1
+    },
+    {
+      "name": "Learn Selenium",
+      "id": 2
+    },
+    {
+      "name": "Learn Selenium",
+      "id": 3
+    },
+    {
+      "name": "Learn Selenium",
+      "id": 4
+    },
+    {
+      "name": "Learn Selenium",
+      "id": 5
     }
   ]
 }
